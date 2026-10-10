@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrap">
+    <canvas id="game"></canvas>
+
+    <div id="overlay" class="overlay">
+      <div class="panel" id="menu-panel">
+        <h1>Flappy Bird</h1>
+        <p class="hint">Tekan <b>Spasi</b> / <b>Klik</b> / <b>Tap</b> untuk terbang</p>
+        <button id="start-btn" class="btn">Mulai</button>
+      </div>
+
+      <div class="panel hidden" id="over-panel">
+        <h1>Game Over</h1>
+        <div class="scores">
+          <div><span class="label">Skor</span><span id="final-score" class="value">0</span></div>
+          <div><span class="label">Best</span><span id="best-score" class="value">0</span></div>
+        </div>
+        <p id="new-best" class="new-best hidden">Rekor baru!</p>
+        <button id="retry-btn" class="btn">Main Lagi</button>
+      </div>
+    </div>
+
+    <div id="hud" class="hud hidden"><span id="score">0</span></div>
+    <button id="sound-btn" class="sound-btn" title="Suara">🔊</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
